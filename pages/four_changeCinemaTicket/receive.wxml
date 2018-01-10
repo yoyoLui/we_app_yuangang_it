@@ -1,0 +1,33 @@
+
+<view>
+  <!--wxapp-toast start-->
+      <template is="toast" data="{{...toastData}}"/>
+  <!--wxapp-toast end-->
+  <view wx:if="{{!isCinemaEnter}}" class="exchange_head">
+    <image src="{{avatar_url}}"></image>
+    <view class="userGetGift">{{nick_name}}</view>
+    <view class="userGetGift">在元岗加油站幸运获得电影票礼包</view>
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/sendOneCinema.png"></image>
+  </view>
+  <view wx:else class="exchange_head" style="margin-top:80rpx;">
+    <view class="userGetGift">元岗油站开业送大礼</view>
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/sendOneCinema.png"></image>
+  </view>
+  <view class="exchange_bottom">
+    <view>
+      <!-- 授权button -->
+      <form wx:if="{{is_open_getPhoneNumber}}" bindsubmit="getFormId" report-submit='true'>
+        <button form-type="submit" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" hover-class="button-hover" >点击领取 </button>
+      </form>
+      <!-- 普通button -->
+      <form wx:else bindsubmit="buttonClick" report-submit='true'>
+        <button form-type="submit" >点击领取</button>
+      </form>
+      <view>限车主领取</view>
+    </view>
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/gift.png" mode="scaleToFill"></image>
+  </view>
+</view>
+<image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/bg.png" mode="top" class="bg"></image>
+
+<import src="../../utils/templete/index.wxml"/>

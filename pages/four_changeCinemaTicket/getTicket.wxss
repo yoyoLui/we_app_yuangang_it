@@ -1,0 +1,148 @@
+
+.bg {
+  border: 1px solid transparent;
+  background-image: url('https://img.ejiayou.com/experience_app_img/yuangang/cinema/bg.png');
+}
+
+.getTicket_head {
+  position: relative;
+  width: 100%;
+}
+
+.title_image {
+  display: flex;
+  width: 600rpx;
+  height: 100rpx;
+  margin: 50rpx auto;
+  justify-content: center;
+}
+
+.ticket_image {
+  display: flex;
+  width: 600rpx;
+  height: 100rpx;
+  margin: 50rpx auto;
+  justify-content: center;
+}
+
+.getTicketMethod>.title {
+  color: #b77b5b;
+  font-weight: bold;
+  font-size: 40rpx;
+  margin: 20rpx 40rpx;
+  letter-spacing: 4rpx;
+}
+
+.getTicketMethod_content>.content_item {
+  color: #b77b5b;
+  font-size: 24rpx;
+  margin: 14rpx 40rpx;
+}
+
+image.station {
+  width: 700rpx;
+}
+
+.navig::after {
+  border: none;
+}
+
+.navig {
+  position: absolute;
+  width: 100rpx;
+  height: 40rpx;
+  background-color: transparent;
+  right: 56rpx;
+  top: 90rpx;
+  border-radius: 0;
+  margin: 0;
+ border: none;
+}
+
+.navig:active {
+  background-color: #ccc;
+  opacity: 0.4;
+ border: none;
+  border-radius: 5rpx;
+  margin: 0;
+}
+
+.tip {
+  width: 200rpx;
+  position: absolute;
+  bottom: 80rpx;
+  left: 50%;
+  margin-left: -100rpx;
+  color: white;
+  font-size: 30rpx;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.coverView {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.coverView>image {
+  position: absolute;
+  left: 50%;
+  margin-left: -50rpx;
+  right: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 40rpx;
+}
+
+.instruction {
+  font-size: 40rpx;
+  margin-top: 70rpx;
+  width: 560rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  margin-left: -280rpx;
+}
+
+.instruction>.title {
+  height: 2rpx;
+  line-height: 0;
+  width: 160rpx;
+  font-size: 30rpx;
+  border-left: 160rpx solid white;
+  border-right: 160rpx solid white;
+  margin: 17rpx auto;
+  color: white;
+  text-align: center;
+}
+
+.instruction>.content {
+  margin-top: 60rpx;
+  text-align: left;
+}
+
+.content>.content_item {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 50rpx;
+  text-align: left;
+  letter-spacing: 2rpx;
+}
+
+.click {
+  background-color: red;
+  padding: 0 10rpx;
+  border-radius: 4rpx;
+}
+
+a:active {
+  background-color: red;
+  padding: 0 10rpx;
+  border-radius: 4rpx;
+}

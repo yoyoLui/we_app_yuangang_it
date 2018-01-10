@@ -1,0 +1,22 @@
+<view style="position:relative;height:100%;">
+
+  <template is="toast" data="{{...toastData}}" />
+
+  <view class="exchange_head">
+
+    <image src="{{avatar_url}}"></image>
+    <view class="userGetGift">{{nick_name}}的电影票</view>
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/success_received.png" mode="widthFix"></image>
+  </view>
+  <view class="exchange_bottom">
+    <view>
+      <!-- <form bindsubmit="buttonClick" report-submit='true'> -->
+        <button bindtouchstart='click' disabled="{{disabled_button}}">抢更多好礼</button>
+      <!-- </form> -->
+       <view>电影票领取成功后，元岗现场工作人员将会给您电影卡</view> 
+    </view>
+  </view>
+</view>
+<image class="gift" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/gift.png" mode="scaleToFill"></image>
+<image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/bg.png" mode="top" class="bg"></image>
+<import src="../../utils/templete/index.wxml" />

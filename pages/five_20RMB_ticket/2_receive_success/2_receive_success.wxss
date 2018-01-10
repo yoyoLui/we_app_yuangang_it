@@ -1,0 +1,75 @@
+
+body {
+  font-family: PingFangSC-Regular;
+}
+
+.ticket_img {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.receive_button_img {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 60rpx;
+  bottom: 100rpx;
+}
+
+.congratulation {
+  width: 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 60rpx;
+  color: #f23838;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40rpx;
+  font-weight: bold;
+}
+
+.minus20 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #453d38;
+  margin-top: 20rpx;
+}
+
+.money {
+  font-family: PingFangSC-Semibold;
+  font-size: 60rpx;
+  color: #fff;
+  position: absolute;
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 5%;
+  text-align: center;
+  bottom: 50%;
+  margin-bottom: 46rpx;
+}
+
+.instrution {
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
+  color: #4a4a4a;
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  margin-left: 5%;
+}
+
+.instrution view {
+  line-height: 55rpx;
+}
+
+.instrution view:first-child {
+  font-weight: bold;
+}

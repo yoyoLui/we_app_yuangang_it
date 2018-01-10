@@ -1,0 +1,19 @@
+<view>
+  <image src="https://img.ejiayou.com/experience_app_img/yuangang/20_RMB_ticket/money_bg.png" class="ticket_img" mode="scrollToFix"></image>
+  <view class="congratulation">领取成功</view>
+  <view class="minus20">优惠券已放入您手机 {{mobi}} 中</view>
+  <view class="money">6元优惠券</view>
+  <view class="instrution">
+    <view>使用规则：</view>
+    <view>前往太阳派元岗加油站,支付油费时自动使用</view>
+    <view>满100元可用,限太阳派加油站使用，领取后7日内有效</view>
+    <view>油站地址：天河区天源路961号（晨悦酒店旁）</view>
+  </view>
+
+
+</view>
+<!--wxapp-toast start-->
+<template is="toast" data="{{...toastData}}" />
+<!--wxapp-toast end-->
+
+<import src="../../../utils/templete/index.wxml" />

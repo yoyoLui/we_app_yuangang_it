@@ -1,0 +1,55 @@
+<view class="exchange_results">
+  <!--wxapp-toast start-->
+  <template is="toast" data="{{...toastData}}" />
+  <!--wxapp-toast end-->
+  <view class="exchange_head">
+
+    <image src="{{avatar_url}}"></image>
+    <view class="userGetGift">{{nick_name}}获得电影票大礼包</view>
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/{{ticketNum}}.png"></image>
+  </view>
+  <view class="exchange_speed">
+    <view class="exchange_speed_content">
+      <image mode="wideFix" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/receivedList.png"></image>
+      <text>看谁抢得快</text>
+      <!-- <block wx:if="{{is_loaded}}"> -->
+        <view  wx:if="{{is_loaded}}" class="received_list" wx:if="{{invite_records&&invite_records!=false}}">
+          <view class="received_list_item" wx:for="{{invite_records}}" wx:key="">
+            <view style="">{{item.nick_name}}</view>
+            <view class="time_center">{{item.prize_time}}</view>
+            <view>已领取</view>
+          </view>
+        </view>
+        <view wx:else class="received_list">
+          <view class="received_list_item" style="text-align:center;">您已领取成功，工作人员将会给您电影卡</view>
+        </view>
+      <!-- </block> -->
+      <!-- <block wx:else>
+        <view style="heigth:1px;width:100%;margin-top:200rpx"></view>
+      </block> -->
+
+      <view class='buttonView'>
+        <button open-type="share">送朋友电影票</button>
+      </view>
+      <view class="button_tip">车主好友每人可领1张</view>
+      <view class="instruction">
+        <view class="title">
+          活动规则
+        </view>
+        <view class="content">
+          <view class="content_item"> 1、每位用户（一个手机号+一个车牌号）仅限领取一张电影票；</view>
+          <view class="content_item"> 2、赠票给好友，好友收到邀请，前往元岗加油站加油后免费领取一张电影实体卡； </view>
+          <view class="content_item">3、电影卡不可兑现； </view>
+          <view class="content_item">4、其余未尽事项，可咨询元岗工作人员；</view>
+          <view class="content_item"> 5、本活动最终解释权归元岗加油站所有。</view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+  <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/gift.png" mode="widthFix"></image>
+
+</view>
+<image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/bg.png" mode="widthFix" class="bg"></image>
+
+<import src="../../utils/templete/index.wxml" />

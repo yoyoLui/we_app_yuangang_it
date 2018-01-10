@@ -1,0 +1,31 @@
+<view style="position:relative;height:100%;">
+
+  <template is="toast" data="{{...toastData}}" />
+
+  <view class="exchange_head">
+
+    <image src="{{avatar_url}}"></image>
+    <view class="userGetGift">恭喜{{nick_name}}加油获得一份好礼</view>
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/cinema1.png" mode="widthFix"></image>
+  </view>
+  <view class="exchange_bottom">
+    <view>
+      <view>每位车主仅能领取1张</view>
+      <!-- <text>粤</text> -->
+      <input bindinput='inputCarNum' placeholder='请填写车牌号' placeholder-class='placeholderClass' maxlength='7' value="{{carNum}}">{{carNum}}</input>
+
+      <!-- 授权button -->
+      <form wx:if="{{is_open_getPhoneNumber}}" bindsubmit="getFormId" report-submit='true'>
+        <button form-type="submit" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" hover-class="button-hover" disabled="{{disabled_button}}">我要领取 </button>
+      </form>
+      <!-- 普通button -->
+      <form wx:else bindsubmit="buttonClick" report-submit='true'>
+        <button form-type="submit" disabled="{{disabled_button}}">我要领取</button>
+      </form>
+      <!-- <view>你和你的朋友每人可领一张</view> -->
+    </view>
+  </view>
+</view>
+<image class="gift" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/gift.png" mode="scaleToFill"></image>
+<image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/bg.png" mode="top" class="bg"></image>
+<import src="../../utils/templete/index.wxml" />

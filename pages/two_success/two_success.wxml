@@ -1,0 +1,7 @@
+<!--pages/success/success.wxml-->
+<view class="content">
+  <image src="https://img.ejiayou.com/experience_app_img/image_background.jpg" class="bg-view-image"></image>
+  <view class="gift_wrap">
+    <image src="https://img.ejiayou.com/experience_app_img/gift2.png" class="gift_image"/>
+  </view>
+</view>

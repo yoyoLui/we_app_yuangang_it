@@ -1,0 +1,35 @@
+<!--pages/inputPlatNum/inputPlatNum.wxml-->
+<view class="content">
+  <text class="input_plate_number">请输入车牌号</text>
+
+  <!-- 车牌输入框start -->
+  <view class="plate_input">
+    <!-- 文字 -->
+    <view class="plate_txt">
+      <input class="plate_txt_input" value="{{numInputText}}" focus="{{txtInput}}" type="text" placeholder="粤" placeholder-style="color:rgba(12,17,19,0.22)" maxlength="1" bindinput="bindTxtInput"/>
+    </view>
+    <!-- 数字 -->
+    <view class="plate_num">
+      <view class="plate_num_wrap">
+        <input class="plate_num_input" focus="{{numInput}}" value="{{numInputValue}}" placeholder="A·12345" placeholder-style="color:rgba(12,17,19,0.22)" maxlength="7" bindinput="bindNumInput"/>
+      </view>
+    </view>
+  </view>
+  <!-- 车牌输入框end -->
+  <!-- 点击按钮start -->
+  <view class="btn_area">
+    <form report-submit='true' bindsubmit='collect_gifts'>
+    <button disabled="{{disabled}}" hover-class="button-hover" class="collect_gifts_btn_2" open-type="{{getPhoneNumber}}" bindgetphonenumber= "{{getPhoneNumber}}" form-type='submit'>立即领取</button>
+    </form>
+  </view>
+  <!-- 点击按钮end -->
+
+<!--wxapp-toast start-->
+  <view class="wxapp-toast-content-box" wx:if="{{isShowToast}}">
+    <view class="wxapp-toast-content">
+      <view class="wxapp-toast-content-text"> {{toastText}} </view>
+    </view>
+  </view>
+  <!--wxapp-toast end-->
+
+</view>

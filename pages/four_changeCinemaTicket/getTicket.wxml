@@ -1,0 +1,43 @@
+<view class="bg">
+  <!--wxapp-toast start-->
+    <template is="toast" data="{{...toastData}}"/>
+  <!--wxapp-toast end-->
+  <view class="getTicket_head">
+    <image class="title_image" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/getOneCinema.png" mode="widthFix"></image>
+    <image class="ticket_image" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/ticket.png" mode="widthFix"></image>
+
+    <view class="getTicketMethod">
+      <view class="title">如何领取电影票?</view>
+      <view class="getTicketMethod_content">
+        <view class="content_item">1.开车前往元岗加油站前台凭手机号直接领取您的电影票;</view>
+        <view class="content_item">2.电影票由元岗加油站赞助提供;</view>
+        <view class="content_item">3.电影票在全城影院可兑换任意场次2D电影;</view>
+        <view class="content_item">4.油站详情地址见下方。</view>
+      </view>
+    </view>
+
+    <view style="text-align:center;position:relative;">
+      <button class="navig" bind:touchstart="navToStation"></button>
+      <image class="station" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/station.png" mode="widthFix"></image>
+    </view>
+    <view wx:if="{{!show_tip}}" class="tip" bind:touchstart="click1">活动规则</view>
+    <view wx:if="{{show_tip}}" class="coverView">
+      <view class="instruction">
+        <view class="title">
+          活动规则
+        </view>
+        <view class="content">
+          <view class="content_item"> 1.每位用户（一个手机号+一个车牌号）仅限领取一张电影票；</view>
+          <view class="content_item"> 2.前往元岗油站加油后即可免费领取1张电影票，凭票在合作电影院可兑换1张2D电影票； </view>
+          <view class="content_item">3.电影卡不可兑现； </view>
+          <view class="content_item">4.其余未尽事项，可咨询元岗工作人员；</view>
+          <view class="content_item"> 5.本活动最终解释权归元岗加油站所有。</view>
+        </view>
+      </view>
+      <!-- scaleToFill -->
+      <image bind:touchstart="click2" src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/close.png" mode="wideFix"></image>
+    </view>
+  </view>
+</view>
+
+<import src="../../utils/templete/index.wxml"/>

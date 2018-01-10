@@ -1,0 +1,41 @@
+/* pages/two_inputPhone/two_inputPhone.wxss *//* pages/inputPhone/inputPhone.wxss */
+.content{
+  width: 100%;
+  height: 100%;
+}
+.input_phone_number{
+  display: block;
+  margin-left: 48rpx;
+  margin-top: 100rpx;
+  margin-bottom: 24rpx;
+  font-size: 32rpx;
+  color: #949494;
+}
+.input{
+  height: 120rpx;
+  background: #fff;
+  margin-left: 48rpx;
+  margin-right: 48rpx;
+  margin-top: 20rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 8rpx;
+}
+.collect_gifts_btn{
+  background:  #FB7511;
+  color: #FFFFFF;
+  width: 654rpx;
+  height: 116rpx;
+  text-align: center;
+  font-size: 36rpx;
+  line-height: 116rpx;
+  margin-top: 104rpx;
+}
+.phont_et{
+  font-size: 48rpx;
+  height: 100%;
+  color:  #0C1113;
+  padding-left: 32rpx;
+}
+.button-hover {
+  background-color: #F7B482;
+}

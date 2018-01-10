@@ -1,0 +1,12 @@
+
+<view>
+  <view  class="exchange_head" style="margin-top:80rpx;">
+    <!-- <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/sendOneCinema.png"></image> -->
+     <view class="userGetGift">{{msg}}</view> 
+       <!-- <view class="userGetGift">电影票已经领取过</view> -->
+  </view>
+  <view class="exchange_bottom">
+    <image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/gift.png" mode="widthFix"></image>
+  </view>
+</view>
+<image src="https://img.ejiayou.com/experience_app_img/yuangang/cinema/bg.png" mode="widthFix" class="bg"></image>

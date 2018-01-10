@@ -1,0 +1,119 @@
+@import "../../common/common.wxss";
+
+page {
+  position: relative;
+  background-color: white;
+  height: 100%;
+}
+
+image.bg {
+  width: 100%;
+   height: 100%; 
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+
+image.gift {
+  position: absolute;
+  width: 100%;
+  height: 700rpx;
+  bottom: 0;
+  z-index: -1;
+}
+
+.exchange_head {
+  position: relative;
+  width: 100%;
+  height: 700rpx;
+  text-align: center;
+}
+
+.exchange_head  image:first-child {
+  width: 160rpx;
+  height: 160rpx;
+  margin-top:50rpx;
+  border-radius: 50%;
+}
+
+.exchange_head view.userGetGift {
+  color: #ac6944;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular;
+  margin-top: 10rpx;
+}
+
+.exchange_head image:last-child {
+  width: 400rpx;
+  height: 164rpx;
+  margin-top: 33rpx;
+}
+
+.exchange_bottom {
+  position: absolute;
+  color: white;
+  width: 100%;
+  bottom: 40rpx;
+}
+
+.exchange_bottom view view:first-child {
+  text-align: center;
+  margin-top: 0rpx;
+  font-size: 24rpx;
+}
+
+.exchange_bottom  view input {
+  display: block;
+  width: 630rpx;
+  height: 90rpx;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10rpx;
+  padding-left: 230rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.placeholderClass {
+  text-align: left;
+}
+
+.exchange_bottom text {
+  position: absolute;
+  z-index: 2;
+  font-size: 40rpx;
+  top: 90rpx;
+  left: 220rpx;
+  color: #333;
+}
+
+.exchange_bottom  view button {
+  display: block;
+  width: 630rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  bottom: 80rpx;
+  margin-top: 120rpx;
+  background-color: #ffbe07;
+  color: white;
+  font-size: 32rpx;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  background-color: #ccc;
+  color: white;
+}
+
+.exchange_bottom  view view:last-child {
+  text-align: center;
+  font-size: 24rpx;
+  margin-top: -40rpx;
+}

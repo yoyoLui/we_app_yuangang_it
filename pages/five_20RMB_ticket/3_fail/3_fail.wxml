@@ -1,0 +1,9 @@
+<view>
+  <image src="https://img.ejiayou.com/experience_app_img/yuangang/20_RMB_ticket/sorry.png" class="ticket_img" mode="scrollToFix"></image>
+  <view>
+    <view class="congratulation">对不起</view>
+    <view class="minus20">该优惠券仅限新用户领取</view>
+    <block>
+    </block>
+  </view>
+</view>

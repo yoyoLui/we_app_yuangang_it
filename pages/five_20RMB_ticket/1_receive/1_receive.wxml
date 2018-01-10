@@ -1,0 +1,17 @@
+<view wx:if="{{show}}">
+  <image src="https://img.ejiayou.com/experience_app_img/yuangang/20_RMB_ticket/ticket.png" class="ticket_img" mode="scrollToFix"></image>
+  <view>
+    <view class="congratulation">恭喜您获得一张优惠券</view>
+    <view class="minus20">{{ content}}</view>
+
+    <!-- 授权button -->
+    <form wx:if="{{is_open_getPhoneNumber}}" bindsubmit="getFormId" report-submit='true'>
+      <button class="receive_button" form-type="submit" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" hover-class="button-hover" disabled='{{disabled_button}}'>点击领取 </button>
+    </form>
+    <!-- 普通button -->
+    <form wx:else bindsubmit="buttonClick" report-submit='true'>
+      <button class="receive_button" form-type="submit" disabled='{{disabled_button}}'>点击领取</button>
+    </form>
+
+  </view>
+</view>

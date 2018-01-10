@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/four_changeCinemaTicket/receive",
+    "pages/four_changeCinemaTicket/getTicket",
+    "pages/four_changeCinemaTicket/exchangeResults",
+    "pages/four_changeCinemaTicket/inputPlate",
+    "pages/four_changeCinemaTicket/phoneInput",
+    "pages/app_apply/app_apply",
+    "pages/record/record",
+    "pages/upload/upload",
+    "pages/two_inputPlatNum/two_inputPlatNum",
+    "pages/two_inputPhone/two_inputPhone",
+    "pages/two_success/two_success",
+    "pages/two_questionnaire_result/two_questionnaire_result",
+    "pages/two_questionnaire/two_questionnaire",
+    "pages/two_questionnaire_success/two_questionnaire_success",
+    "pages/four_changeCinemaTicket/index",
+    "pages/four_changeCinemaTicket/receive2",
+    "pages/four_changeCinemaTicket/success_input",
+    "pages/five_20RMB_ticket/1_receive/1_receive",
+    "pages/five_20RMB_ticket/2_receive_success/2_receive_success",
+    "pages/five_20RMB_ticket/3_fail/3_fail",
+    "pages/five_20RMB_ticket/phoneInput/phoneInput"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "元岗加油站",
+    "navigationBarTextStyle": "black"
+  }
+}
